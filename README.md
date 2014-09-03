@@ -4,6 +4,12 @@
 
 ![image](https://raw.githubusercontent.com/tgfjt/Sublime-eew/master/screenshot.png)
 
+## Link
+
+- [eew.vim](https://github.com/haya14busa/eew.vim)
+- [eew.el](https://github.com/syohex/emacs-eew)
+
+
 ## Install
 
 git clone `~/Library/Application Support/Sublime Text 3/Packages`
