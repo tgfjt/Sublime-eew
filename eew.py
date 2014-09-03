@@ -44,6 +44,10 @@ class EewUpdate(sublime_plugin.TextCommand):
         url = self.get_url()
         res = urllib.request.urlopen(url)
         data = res.read().decode('sjis')
+
+        if data == '':
+            return ''
+
         cr = data.split('\n')
 
         for row in cr:
