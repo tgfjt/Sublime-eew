@@ -22,6 +22,9 @@ git clone `~/Library/Application Support/Sublime Text 3/Packages`
 手動:
 `Ctrl + Command + p` > `eew: update`
 
+## Update Log
+
+- 前回の取得結果と同じ場合でも表示を消さないように変更
 
 ## Licence
 MIT

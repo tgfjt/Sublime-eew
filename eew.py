@@ -45,6 +45,7 @@ class EewUpdate(sublime_plugin.TextCommand):
         res = urllib.request.urlopen(url)
         data = res.read().decode('sjis')
 
+        # 情報なし
         if data == '':
             return ''
 
@@ -60,8 +61,9 @@ class EewUpdate(sublime_plugin.TextCommand):
 
         if result:
             if result[0].replace('\n', '') == str:
-                # 同じ結果の場合は、空にする
-                return ''
+                # 前回と結果が同じ場合は、それをまた表示しておく
+                # TODO: そもそも何もしなくて良い
+                return self.message(result[0])
         else:
             result[:] = tmp
             f = codecs.open(cache_file, 'w', 'utf-8')
